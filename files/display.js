@@ -12,7 +12,7 @@ function display() {
     if (text.value.length > 0) {
       textRight.value = text.value;
       contRightOne.style.display = "none";
-      contRightTwo.style.display = "block";
+      contRightTwo.style.display = "";
     } else {
       contRightOne.style.display = "block";
       contRightTwo.style.display = "none";
