@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const decryptedText = decryption(inputText);
     document.getElementById("text-input-right-two").value = decryptedText;
   });
-
   // Añadir event listener para el botón de copiar
   document.getElementById("copy-button").addEventListener("click", () => {
     copy();

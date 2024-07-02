@@ -1,3 +1,6 @@
+*{
+  margin: 0;
+}
 body {
   font-family: Arial, sans-serif;
   background-color: #9DA6B0;
@@ -10,6 +13,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  margin-left: 3%;
 }
 
 .header {
@@ -28,6 +32,8 @@ body {
   width: 100%;
   max-width: 1200px;
   gap: 20px;
+  
+
 }
 
 .left-section,
@@ -65,15 +71,16 @@ body {
     border-radius: 10px;
     padding: 15px;
     width: 64%;
-    height: 62vh;
+    height: 61.7vh;
     box-shadow: 0 4px 8px #3684DF;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    margin-bottom: 200px;
 }
 .cont-right-one {
-background-color: #99C3F0;
+  background-color: #99C3F0;
   border-radius: 10px;
   padding: 15px;
   width: 64%;
@@ -83,14 +90,15 @@ background-color: #99C3F0;
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  justify-content: flex-end;
+  justify-content: center;
   flex-wrap: nowrap;
   align-items: stretch;
+  text-align: center;
 }
 #sir {
-    display: flex;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  width: 100%;
+  object-fit: contain;
 }
 #message-status{
 display: flex;
@@ -99,7 +107,6 @@ justify-content: space-evenly;
 #text-input-right-two {
   width: 90%;
   height: 100%;
-  margin: 20px 0;
   border: none;
   border-radius: 5px;
   color: #fff;
@@ -107,6 +114,7 @@ justify-content: space-evenly;
   border-style: none;
   outline: none;
   resize: none;
+  padding: 10px;
 }
 #text-input-right-two::placeholder {
   color: #fff;
@@ -182,8 +190,10 @@ button {
 /* Media query for mobile devices */
 @media (max-width: 768px) {
   .container {
+    
     flex-direction: column;
     align-items: center;
+    
   }
 
   .left-section,
@@ -200,6 +210,7 @@ button {
 
   .cont-right img {
     display: none;
+    
   }
 
   #sir {
