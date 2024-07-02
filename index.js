@@ -1,9 +1,9 @@
 // index.js
 
 // Importar funciones de los otros módulos
-import { encryption, decryption } from "./files/encryption.js";
-import { copy } from "./files/copy.js";
-import { display } from "./files/display.js";
+import { encryption, decryption } from "/files/encryption.js";
+import { copy } from "/files/copy.js";
+import { display } from "/files/display.js";
 
 // Inicializar la funcionalidad
 document.addEventListener("DOMContentLoaded", () => {
