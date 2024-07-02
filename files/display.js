@@ -2,24 +2,22 @@
 
 function display() {
   const text = document.getElementById("text-input-left");
-  const img = document.getElementById("sir");
-  const h3 = document.getElementById("message-status");
   const encryptButton = document.getElementById("encrypt-button");
-  const textRight = document.getElementById("text-input-right");
+  const textRight = document.getElementById("text-input-right-two");
+  const contRightOne = document.querySelector(".cont-right-one");
+  const contRightTwo = document.querySelector(".cont-right-two");
+  
 
-
-  textRight.style.display = "none";
   encryptButton.addEventListener("click", function () {
     if (text.value.length > 0) {
-      img.style.display = "none";
-      h3.style.display = "none";
+      textRight.value = text.value; // Reemplaza el valor del cuadro de abajo con el de arriba
+      contRightOne.style.display = "none";
+      contRightTwo.style.display = "block";
     } else {
-      img.style.display = "block";
-      h3.style.display = "block";
-      textRight.style.display = "block";
+      contRightOne.style.display = "block";
+      contRightTwo.style.display = "none";
     }
   });
-
 }
 
 export { display };

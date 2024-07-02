@@ -14,13 +14,13 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("encrypt-button").addEventListener("click", () => {
     const inputText = document.getElementById("text-input-left").value;
     const encryptedText = encryption(inputText);
-    document.getElementById("text-input-right").value = encryptedText;
+    document.getElementById("text-input-right-two").value = encryptedText;
   });
 
   document.getElementById("decrypt-button").addEventListener("click", () => {
     const inputText = document.getElementById("text-input-left").value;
     const decryptedText = decryption(inputText);
-    document.getElementById("text-input-right").value = decryptedText;
+    document.getElementById("text-input-right-two").value = decryptedText;
   });
 
   // Añadir event listener para el botón de copiar
