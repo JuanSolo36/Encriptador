@@ -10,7 +10,7 @@ function display() {
 
   encryptButton.addEventListener("click", function () {
     if (text.value.length > 0) {
-      textRight.value = text.value; // Reemplaza el valor del cuadro de abajo con el de arriba
+      textRight.value = text.value;
       contRightOne.style.display = "none";
       contRightTwo.style.display = "block";
     } else {
